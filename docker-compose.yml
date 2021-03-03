@@ -9,13 +9,14 @@ services:
     ports:
       - 8000:8000
     depends_on:
-      - db
+        - db 
   db:
     image: postgres:11
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
+     - postgres_data:/var/lib/postgresql/data/
     environment:
-      - "POSTGRES-HOST-AUTH-METHOD=trust"
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
 
 volumes:
+  
   postgres_data:
