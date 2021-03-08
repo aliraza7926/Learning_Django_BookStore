@@ -1,9 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <metacharset="utf-8">
+    <meta charset="utf-8">
         <title>{% block title %}Bookstore{% endblock title %}</title>
+        <link rel="stylesheet" href="{% static 'css/_base.css' %}">
 </head>
 
 <body>
