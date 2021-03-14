@@ -25,6 +25,7 @@ urlpatterns = [
 
     # Local apps
     path('',include('pages.urls')),
+    path('book/',include('books.urls')),
 
 
 ]
